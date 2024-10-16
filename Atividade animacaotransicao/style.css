@@ -1,0 +1,108 @@
+html, body {
+  font-family: sans-serif;
+  background-color: #E2AFD5;
+  color: #eee;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+h1 {
+  color: #810568;
+  text-align: center;
+  font-size: 50px;
+}
+
+h3 {
+  color: #80008D;
+  text-align: center;
+}
+
+img {
+  max-width: 45%;
+  height: auto;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.animationFadeInFadeOut {
+  animation: fadeInFadeOut 2s linear infinite;
+}  
+
+@keyframes fadeInFadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.transicao-de-cor:hover {
+  transition: color 0.5s ease-in-out;
+  color: #f32a67; 
+}
+
+.pesquisa p {
+  color: #80008D;
+  font-size: 18px;
+}
+
+textarea {
+  width: 90%;
+  max-width: 600px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 5px;
+  border: 1px solid #80008D;
+}
+
+input[type="checkbox"] {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  accent-color: #810568;
+  transition: transform 0.5s ease;
+}
+input[type="checkbox"]:checked {
+  transform: rotate(360deg);
+}
+
+.checkbox {
+  display: inline-block;
+  margin: 10px;
+  font-size: 18px;
+  color: #80008D;
+}
+
+.botao-enviar {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #810568;
+  border-radius: 5px;
+}
+
+.botao-enviar:hover {
+  background-color: #FF66B2; 
+}
